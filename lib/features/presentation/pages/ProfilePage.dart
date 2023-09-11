@@ -49,11 +49,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: Column(
                     children: [
                       Text(
-                        "John Doe",
+                        "Bratipah",
                         style: TextStyle(fontSize: 18),
                       ),
                       Text(
-                        "johndoe@gmail.com",
+                        "bratipahmh@gmail.com",
                         style: TextStyle(
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
@@ -72,32 +72,38 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   padding: const EdgeInsets.all(20),
                   height: 500,
-                  child: const Column(
+                  child:  Column(
                     // crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      ProfileDetails(
+                      const ProfileDetails(
                         icon: Icons.person_sharp,
                         title: "My Profile",
                       ),
-                      ProfileDetails(
+                      const ProfileDetails(
                         icon: Icons.settings,
-                        title: "Settings",
-                      ),
-                      ProfileDetails(
+                        title: "Set Yourself Away",
+                        ),
+                      const ProfileDetails(
                         icon: Icons.notifications,
-                        title: "Notifications",
+                        title: "Pause Notifications",
                       ),
-                      ProfileDetails(
+                      const ProfileDetails(
                         icon: Icons.message_rounded,
-                        title: "Faqs",
+                        title: "Preferences",
                       ),
-                      ProfileDetails(
+                      const ProfileDetails(
                         icon: Icons.share_sharp,
                         title: "Share",
                       ),
-                      ProfileDetails(
+                      const ProfileDetails(
                         icon: Icons.logout,
-                        title: "Logout",
+                        title: "Sign out",
+                      ),
+                      IconButton(
+                          onPressed: () {
+
+                      },
+                          icon: const Icon(Icons.ac_unit_outlined, )
                       ),
                     ],
                   ),

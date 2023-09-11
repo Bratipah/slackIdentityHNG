@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class ProfileDetails extends StatelessWidget {
-  const ProfileDetails({
+  const ProfileDetails( {
     Key? key,
     required this.icon,
     required this.title,
@@ -20,10 +20,15 @@ class ProfileDetails extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(
-                icon,
-                color: Colors.lightBlueAccent,
-                size: 20,
+              IconButton(
+                onPressed: (){
+
+                },
+                icon: Icon(
+                  icon,
+                  color: Colors.lightBlueAccent,
+                  size: 20,
+                ),
               ),
               const SizedBox(width:0.5),
               Text(
